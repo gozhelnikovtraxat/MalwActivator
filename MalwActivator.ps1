@@ -4,7 +4,7 @@ Add-Type -AssemblyName System.Windows.Forms
 Add-Type -Name Window -Namespace Console -MemberDefinition '[DllImport("Kernel32.dll")]public static extern IntPtr GetConsoleWindow();[DllImport("user32.dll")]public static extern bool ShowWindow(IntPtr hWnd, Int32 nCmdShow);'
 [void][Console.Window]::ShowWindow([Console.Window]::GetConsoleWindow(), 0)
 [System.Windows.Forms.Application]::EnableVisualStyles()
-$form = New-Object System.Windows.Forms.Form -Property @{Text = "MalwActivator: Choosing application for activation"; Width = 400; Height = 150}
+$form = New-Object System.Windows.Forms.Form -Property @{Text = "GOZHELNIIKOV: Choosing application for activation"; Width = 400; Height = 150}
 $form.Controls.Add((New-Object System.Windows.Forms.Label -Property @{ Location = '13,13'; Size = '275,25'; Text = 'Version 1.0
 Choose application for activation:'}))
 $combo = New-Object System.Windows.Forms.ComboBox -Property @{Location = New-Object System.Drawing.Point(13,40); Size = New-Object System.Drawing.Size(275,20); DropDownStyle = [System.Windows.Forms.ComboBoxStyle]'DropDownList'}
